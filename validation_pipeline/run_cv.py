@@ -22,8 +22,10 @@ if __name__ == '__main__':
 
     # load config file to obtain the output directory
     exec(open(os.environ['config_file']).read())
-    report_path = os.path.join(config['out_dir'], 'report.html')
+    os.makedirs(config['out_dir'], exist_ok=True)
+    report_ipynb = os.path.join(config['out_dir'], 'crossvalidation.ipynb')
 
     # run the notebook
-    call(['runipy', 'crossvalidation.ipynb', '--html', report_path])
+    call(['runipy', 'crossvalidation.ipynb', report_ipynb])
+    call(['jupyter', 'nbconvert', report_ipynb, '--to', 'html'])
 
