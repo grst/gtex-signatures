@@ -1,5 +1,6 @@
 from pygenesig.gini import GiniSignatureGenerator
 from pygenesig.bioqc import BioQCSignatureTester
+import os
 
 config = {
     'expr_file': '/pstore/home/sturmg/projects/gtex-signatures/data_processed/v3/exprs_processed.npy',
@@ -10,5 +11,5 @@ config = {
     'sg_kwargs': {"min_gini": .8, "max_rk": 3, "min_expr": 5, "max_rel_rk": None},
     'signature_tester': BioQCSignatureTester,
     'st_kwargs': {},
-    'out_dir': '/pstore/home/sturmg/projects/gtex-signatures/results/v3/gtex_0.8_3'
+    'results_dir': '/pstore/home/sturmg/projects/gtex-signatures/results'
 }

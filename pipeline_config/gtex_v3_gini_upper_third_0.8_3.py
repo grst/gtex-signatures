@@ -10,5 +10,6 @@ config = {
     'sg_kwargs': {"min_gini": .8, "max_rk": 3, "min_expr": 5, "max_rel_rk": .33},
     'signature_tester': BioQCSignatureTester,
     'st_kwargs': {},
-    'out_dir': '/pstore/home/sturmg/projects/gtex-signatures/results/v3/gtex_gini_0.8_3_upper_third'
+    'mem': '100G',
+    'results_dir': '/pstore/home/sturmg/projects/gtex-signatures/results'
 }
