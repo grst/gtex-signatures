@@ -11,6 +11,6 @@ config = {
     'signature_tester': BioQCSignatureTester,
     'st_kwargs': {},
     'results_dir': '/pstore/home/sturmg/projects/gtex-signatures/results',
-    'mem': '240G',
-    'n_jobs': 5 # limit number of jobs to reduce memory usage
+    'mem': '200G',
+    'n_jobs': 10 # limit number of jobs to reduce memory usage
 }
