@@ -1,6 +1,7 @@
 ##### Custom Rules
 data
 data_processed
+old_notebooks
 results
 .idea
 mydask.png
