@@ -2,8 +2,8 @@ from pygenesig.gini import GiniSignatureGenerator
 from pygenesig.bioqc import BioQCSignatureTester
 
 config = {
-    'expr_file': '/pstore/home/sturmg/projects/pygenesig-example/data_processed/v6/exprs.npy',
-    'target_file': '/pstore/home/sturmg/projects/pygenesig-example/data_processed/v6/target.csv',
+    'expr_file': '/pstore/home/sturmg/projects/pygenesig-example/data_processed/v6/expr_solid.npy',
+    'target_file': '/pstore/home/sturmg/projects/pygenesig-example/data_processed/v6/target_solid.csv',
     'rosetta_file': '/pstore/home/sturmg/projects/pygenesig-example/data_processed/v6/rosetta.csv',
     'n_splits': 10,
     'signature_generator': GiniSignatureGenerator,
@@ -12,5 +12,5 @@ config = {
     'st_kwargs': {},
     'results_dir': '/pstore/home/sturmg/projects/pygenesig-example/results',
     'mem': '200G',
-    'n_jobs': 10 # limit number of jobs to reduce memory usage
+    'n_jobs': 10
 }
